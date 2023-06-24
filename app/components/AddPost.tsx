@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react"
-import { text } from "stream/consumers"
+
 
 export default function CreatePost() {
     const [title, setTitle] = useState("")
