@@ -8,7 +8,6 @@ import { toast } from "react-hot-toast"
 export default function CreatePost() {
     const [title, setTitle] = useState("")
     const [isDisabled, setIsDisabled] = useState(false)
-
     // Create a Post
     const { mutate } = useMutation(
         async (title: string) =>
