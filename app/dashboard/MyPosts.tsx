@@ -16,16 +16,16 @@ export default function MyPosts() {
         queryKey: ["auth'ed-posts"]
     })
     if(isLoading) return <h1>authed posts is loading....</h1>
-    console.log(data)
+    
     return(
         <div>
-            {data?.posts?.map((post) => <EditPosts 
+            {data?.Post?.map((post) => <EditPosts 
                 key={post.id}
                 name={data.name}
                 avatar={data.image}
                 title={post.title}
                 id = {post.id}
-                comments = {post.comments}/>)}
+                comments = {post.Comment}/>)}
         </div>
     )
 }

@@ -11,7 +11,7 @@ export default async function Nav() {
     return (
     <nav className='flex justify-between items-center py-8'>
         <Link href={"/"}>
-            <h1 className='font-bold text-lg'>send it </h1>
+            <h1 className='font-bold text-lg'>HomePage </h1>
         </Link>
         <ul className='flex items-center py-8'>
             {!session?.user && <Login/>}
