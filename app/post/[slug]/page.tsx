@@ -4,7 +4,6 @@ import AddComment from "@/app/components/AddComment";
 import Post from "@/app/components/Post";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-
 import Image from "next/image"
 
 type URL = {
