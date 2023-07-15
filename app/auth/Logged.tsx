@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 
 type User = {
-    image : String
+    image : any
 }
 
 export default function Logged({ image }: User) {
