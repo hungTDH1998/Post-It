@@ -30,7 +30,7 @@ export default function EditPosts({ avatar, name, id, title, comments }: EditPro
             loading: 'Deleting your post',
             success: 'Post has been deleted',
             error: (error: AxiosError) => {
-              return error?.response?.data.message || 'An error occurred';
+              return 'An error occurred';
             },
           }),
         {
