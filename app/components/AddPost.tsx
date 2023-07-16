@@ -16,7 +16,7 @@ export default function CreatePost() {
         loading: "Creating your post",
         success: "Post has been made",
         error: (error: AxiosError) => {
-          return error?.response?.data.message || "An error occurred";
+          return  "An error occurred";
         },
       }),
     {
