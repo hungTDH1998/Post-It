@@ -35,7 +35,7 @@ export default function EditPosts({ avatar, name, id, title, comments }: EditPro
           }),
         {
           onSuccess: (data) => {
-            queryClient.invalidateQueries("auth'ed-posts")
+            queryClient.invalidateQueries(["auth'ed-posts"])
           },
         }
       )
