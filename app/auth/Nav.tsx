@@ -5,8 +5,11 @@ import Logged from "./Logged";
 import { authOptions } from "../../pages/api/auth/[...nextauth]";
 import { getServerSession } from "next-auth/next";
 
+
+
 export default async function Nav() {
-  const session = await getServerSession(authOptions);
+  
+  const session: any = await getServerSession( authOptions );
   return (
     <nav className="flex justify-between items-center py-8">
       <Link href={"/"}>
