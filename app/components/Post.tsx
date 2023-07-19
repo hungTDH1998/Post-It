@@ -8,7 +8,12 @@ type PostDetails = {
   name: string;
   postTitle: string;
   id: string;
-  comment: string;
+  comment? : {
+    createdAt: string
+    id: string
+    postId: string
+    userId: string
+}[]
 };
 
 export default function Post({
