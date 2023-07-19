@@ -8,16 +8,17 @@ import { useMutation , useQueryClient} from "@tanstack/react-query"
 import toast from "react-hot-toast"
 
 type EditProps = {
-    id: string
-    avatar: string
-    name: string
-    title: string
-    comments: {
-        id: string
-        postId: string
-        userId: string
-    }[]
-}
+  id: string,
+  avatar: string,
+  name: string,
+  title: string,
+  comments?: {
+      id: string,
+      postId: string,
+      userId: string
+  }[]
+};
+
 
 export default function EditPosts({ avatar, name, id, title, comments }: EditProps) {
     //Toggle on-off
@@ -61,7 +62,7 @@ export default function EditPosts({ avatar, name, id, title, comments }: EditPro
             </div>
             <div className="flex items-center gap-4 ml-2">
                 <p className="text-sm text-gray-700 font-bold">
-                    {comments.length} Comments
+                    {comments?.length} Comments
                 </p>
                 <button onClick={(e) => {
                     setToggle(true)

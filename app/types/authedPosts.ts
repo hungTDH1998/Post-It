@@ -1,18 +1,19 @@
 export type AuthPosts = {
-    email: string
+    email: string,
+    id: string,
+    image: string,
+    name: string,
+    posts: {
+    createdAt: string
     id: string
-    image: string
-    name: string
-    Post: {
+    title: string
+    comments?: {
         createdAt: string
         id: string
+        postId: string
         title: string
-        Comment?: {
-            createdAt: string
-            id: string
-            postId: string
-            title: string
-            userId: string 
-        }[]
+        userId: string
     }[]
+    }[]
+    Post: any
 }
