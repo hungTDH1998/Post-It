@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
       <CreatePost />
-      {data?.map((post) => (
+      <p>{data?.map((post) => (
         <Post
           key={post.id}
           name={post.user.name}
@@ -34,7 +34,7 @@ export default function Home() {
           id={post.id}
           comment = {post.Comment}
         />
-      ))}
+      ))}</p>
     </main>
   );
 }
